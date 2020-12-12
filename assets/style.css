@@ -24,6 +24,16 @@ header {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+section {
+    background-color: grey;
+    margin-top: 25px;
+    padding-bottom: 15px;
+}
+
+article {
+    text-align: left;
+}
+
 .row2 {
     padding-top: 15px;
 }

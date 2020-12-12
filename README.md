@@ -5,4 +5,4 @@
     2. CSS
 
 # Sources:
-    1. [Navbar Page](https://getbootstrap.com/docs/5.0/components/navbar/)
+1. [navbar](https://getbootstrap.com/docs/5.0/components/navbar/)

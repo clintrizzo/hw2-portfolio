@@ -23,3 +23,7 @@ body {
 header {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+.row1 {
+    padding-top: 15px;
+}

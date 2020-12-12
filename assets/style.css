@@ -71,3 +71,19 @@ footer>p {
     color: grey;
     padding-top: 15px;
 }
+
+
+/*contact html style sheets*/
+
+aside {
+    float: left;
+}
+
+main {
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+}
+
+.form-floating {
+    padding-top: 10px;
+}

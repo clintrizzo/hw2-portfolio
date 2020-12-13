@@ -73,30 +73,17 @@ footer>p {
 
 /*css for the portfolio.html*/
 
-.container2 {
-    color: grey;
-    background-color: lightgray;
-    margin-top: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 20px;
-    padding-top: 30px;
-    padding-left: 5px;
-    border-left: 40px;
+.col-6 {
     border: 3px;
     border-style: ridge;
     border-color: white;
 }
 
 h1 {
-    color: grey;
+    color: lightgray;
     font-family: 'Courier New', Courier, monospace;
-}
-
-@media screen and (max-width: 700px) {
-    .pictures {
-        height: 20%;
-    }
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 

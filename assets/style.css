@@ -101,12 +101,6 @@ main {
     border-color: white;
 }
 
-@media screen and (min-width: 400px) {
-    .container1 {
-        padding-top: 10px;
-    }
-}
-
 .contact-head {
     font-family: 'Courier New', Courier, monospace;
 }

@@ -101,6 +101,12 @@ main {
     border-color: white;
 }
 
+@media screen and (max-width: 600px) {
+    .container1 {
+        width: 100%;
+    }
+}
+
 .button {
     padding-left: 200px;
     padding-right: 200px;

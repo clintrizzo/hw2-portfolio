@@ -101,8 +101,8 @@ main {
     border-color: white;
 }
 
-@media screen and (min-width: 100px) {
-    .images {
+@media screen and (min-width: 400px) {
+    .container1 {
         padding-top: 10px;
     }
 }

@@ -34,12 +34,16 @@ header {
     padding-right: 15px;
 }
 
+figure {
+    padding-left: 10px;
+}
+
 main {
     /*columns and rows for index.html*/
     color: grey;
     background-color: lightgray;
     font-family: 'Courier New', Courier, monospace;
-    margin-top: 35px;
+    margin-top: 60px;
     border: 3px;
     border-style: ridge;
     border-color: white;
@@ -84,21 +88,25 @@ main {
     margin-bottom: 40px;
 }
 
-.form-floating {
-    padding-top: 10px;
-    padding-left: 5px;
-}
-
 .container1 {
     /*for contact html page*/
     color: grey;
     background-color: lightgray;
     margin-top: 35px;
-    margin-left: 100px;
-    margin-right: 100px;
+    padding-left: 250px;
     border: 3px;
     border-style: ridge;
     border-color: white;
+}
+
+@media screen and (min-width: 100px) {
+    .images {
+        padding-top: 10px;
+    }
+}
+
+.container>script {
+    padding-right: -200px;
 }
 
 .contact-head {

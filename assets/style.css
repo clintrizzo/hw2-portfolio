@@ -101,7 +101,7 @@ main {
     border-color: white;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 400px) {
     .container1 {
         padding-right: 200px
     }

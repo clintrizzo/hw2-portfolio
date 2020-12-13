@@ -87,13 +87,6 @@ header {
     padding-bottom: 25px;
 }
 
-@media screen and (max-width: 700px) {
-    .pictures {
-        width: 100px;
-        height: 100px;
-    }
-}
-
 
 /*contact html style sheets*/
 

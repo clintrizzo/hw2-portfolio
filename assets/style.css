@@ -69,7 +69,7 @@ footer {
     border-style: ridge;
     border-color: white;
     flex-shrink: 0;
-    margin: auto;
+    margin-top: auto;
 }
 
 footer>p {
@@ -93,21 +93,17 @@ main {
     color: grey;
     background-color: lightgray;
     margin-top: 35px;
-    padding-left: 250px;
-    padding-top: 20px;
-    padding-bottom: -20px;
+    margin-left: 50px;
+    margin-right: 150px;
+    padding-top: 30px;
     border: 3px;
     border-style: ridge;
     border-color: white;
 }
 
-.contact-head {
-    font-family: 'Courier New', Courier, monospace;
-}
-
 .button {
     padding-left: 200px;
     padding-right: 200px;
-    padding-top: 5px;
+    padding-top: 10px;
     margin-left: -150px;
 }

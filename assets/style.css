@@ -1,131 +1,129 @@
-html {
-    min-height: 100%;
-}
-
-body {
-    background-color: grey;
-    box-sizing: border-box;
-}
-
-
-/*moved header to be in order*/
-
-header {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-.container-fluid {
-    /*navbar same for all pages*/
-    background-color: lightgray;
-    font-size: 20px;
-    font-family: 'Courier New', Courier, monospace;
-    /*added padding to the top and bottom of the nav bar to give room for the button when screen is sm*/
-    padding-top: 7px;
-    padding-bottom: 7px;
-    padding-left: 20px;
-    margin-top: -7px;
-    margin-bottom: -8px;
-    border: 3px;
-    border-style: ridge;
-    border-color: white;
-}
-
-.nav-item {
-    padding-right: 15px;
-}
-
-
-/*end of navbar*/
-
-main {
-    /*columns and rows for index.html*/
-    color: grey;
-    background-color: lightgray;
-    font-family: 'Courier New', Courier, monospace;
-    margin-top: 60px;
-    border: 3px;
-    border-style: ridge;
-    border-color: white;
-}
-
-.row2 {
-    padding-top: 5px;
-}
-
-footer {
-    /*same for all pages*/
-    background-color: lightgray;
-    border: 3px;
-    border-style: ridge;
-    border-color: white;
-    flex-shrink: 0;
-    margin-top: auto;
-}
-
-footer>p {
-    font-size: 15px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-align: center;
-    color: grey;
-    padding-top: 15px;
-}
-
-
-/*css for the portfolio.html*/
-
-.col-6 {
-    border: 3px;
-    border-style: ridge;
-    border-color: white;
-}
-
-@media screen and (max-width: 700px) {
-    .col-6 {
-        width: 33.3%;
-        padding-right: 10px;
+    html {
+        min-height: 100%;
     }
-}
-
-header {
-    color: lightgray;
-    font-family: 'Courier New', Courier, monospace;
-    padding-top: 25px;
-    padding-bottom: 25px;
-}
-
-
-/*contact html style sheets*/
-
-main {
-    padding-bottom: 40px;
-    margin-bottom: 40px;
-}
-
-.container1 {
-    color: grey;
-    background-color: lightgray;
-    margin-top: 60px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 60px;
-    padding-top: 30px;
-    padding-left: 5px;
-    border: 3px;
-    border-style: ridge;
-    border-color: white;
-}
-
-@media screen and (max-width: 700px) {
-    .images {
-        float: right;
-        width: 33.3%;
-        padding-bottom: 5px;
+    
+    body {
+        background-color: grey;
+        box-sizing: border-box;
     }
-}
-
-.button {
-    padding-left: 200px;
-    padding-right: 200px;
-    padding-top: 10px;
-    margin-left: -150px;
-}
+    /*moved header to be in order*/
+    
+    header {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    
+    .container-fluid {
+        /*navbar same for all pages*/
+        background-color: lightgray;
+        font-size: 20px;
+        font-family: 'Courier New', Courier, monospace;
+        /*added padding to the top and bottom of the nav bar to give room for the button when screen is sm*/
+        padding-top: 7px;
+        padding-bottom: 7px;
+        padding-left: 20px;
+        margin-top: -7px;
+        margin-bottom: -8px;
+        border: 3px;
+        border-style: ridge;
+        border-color: white;
+    }
+    
+    .nav-item {
+        padding-right: 15px;
+    }
+    /*end of navbar*/
+    
+    main {
+        /*columns and rows for index.html*/
+        color: grey;
+        background-color: lightgray;
+        font-family: 'Courier New', Courier, monospace;
+        margin-top: 60px;
+        border: 3px;
+        border-style: ridge;
+        border-color: white;
+    }
+    
+    .row2 {
+        padding-top: 5px;
+    }
+    
+    footer {
+        /*same for all pages*/
+        background-color: lightgray;
+        border: 3px;
+        border-style: ridge;
+        border-color: white;
+        flex-shrink: 0;
+        margin-top: auto;
+    }
+    
+    footer>p {
+        font-size: 15px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-align: center;
+        color: grey;
+        padding-top: 15px;
+    }
+    /*css for the portfolio.html*/
+    
+    .container2 {
+        padding-right: 5px;
+        padding-left: 5px
+    }
+    
+    .col-4 {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 20px;
+        text-align: center;
+        border-right: -3px;
+    }
+    
+    @media screen and (max-width: 700px) {
+        .col- {
+            width: 33.3%;
+            padding-right: 10px;
+        }
+    }
+    
+    header {
+        color: lightgray;
+        font-family: 'Courier New', Courier, monospace;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    /*contact html style sheets*/
+    
+    main {
+        padding-bottom: 40px;
+        margin-bottom: 40px;
+    }
+    
+    .container1 {
+        color: grey;
+        background-color: lightgray;
+        margin-top: 60px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 60px;
+        padding-top: 30px;
+        padding-left: 5px;
+        border: 3px;
+        border-style: ridge;
+        border-color: white;
+    }
+    
+    @media screen and (max-width: 700px) {
+        .images {
+            float: right;
+            width: 33.3%;
+            padding-bottom: 5px;
+        }
+    }
+    
+    .button {
+        padding-left: 200px;
+        padding-right: 200px;
+        padding-top: 10px;
+        margin-left: -150px;
+    }

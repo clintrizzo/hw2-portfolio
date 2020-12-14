@@ -3,20 +3,13 @@ html {
 }
 
 body {
-    /*set the background image I found on goole*/
+    /*set the background image I found on google*/
     background-image: url("https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fdam%2Fimageserve%2F765877054%2F960x0.jpg%3Ffit%3Dscale");
     background-color: lightgrey;
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-
-/*moved header to be in order*/
-
-header {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .container-fluid {
@@ -30,8 +23,8 @@ header {
     padding-left: 20px;
     margin-top: -7px;
     margin-bottom: -8px;
-    border: 3px;
-    border-style: ridge;
+    border: 5px;
+    border-style: inset;
     border-color: white;
 }
 
@@ -48,6 +41,7 @@ footer {
     border: 3px;
     border-style: ridge;
     border-color: white;
+    /*got this from page i sourced in readme file*/
     flex-shrink: 0;
     margin-top: auto;
 }
@@ -61,13 +55,13 @@ footer>p {
 }
 
 main {
-    /*columns and rows for index.html*/
+    /*columns and rows for index.html and contact.html*/
     color: grey;
     background-color: lightgray;
     font-family: 'Courier New', Courier, monospace;
     margin-top: 60px;
-    border: 3px;
-    border-style: ridge;
+    border: 5px;
+    border-style: inset;
     border-color: white;
 }
 
@@ -114,8 +108,8 @@ main {
     margin-bottom: 60px;
     padding-top: 30px;
     padding-left: 5px;
-    border: 3px;
-    border-style: ridge;
+    border: 5px;
+    border-style: inset;
     border-color: white;
 }
 

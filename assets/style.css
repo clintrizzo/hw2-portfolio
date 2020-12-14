@@ -79,13 +79,6 @@
         border-right: -3px;
     }
     
-    @media screen and (max-width: 700px) {
-        .col- {
-            width: 33.3%;
-            padding-right: 10px;
-        }
-    }
-    
     header {
         color: lightgray;
         font-family: 'Courier New', Courier, monospace;

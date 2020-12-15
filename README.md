@@ -27,6 +27,8 @@
     1. ![first](assets/Images/screenshot1.png)
     2. ![second](assets/Images/screenshot2.png)
     3. ![third](assets/Images/screenshot3.png)
+6. Link to the project:
+   1. [portfolio](https://clintrizzo.github.io/hw2-portfolio/)
 
 # Sources:
 1. [navbar](https://getbootstrap.com/docs/5.0/components/navbar/)

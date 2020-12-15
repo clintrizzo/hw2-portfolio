@@ -35,6 +35,7 @@
 4. [sticky-footer](https://css-tricks.com/couple-takes-sticky-footer/#:~:text=The%20purpose%20of%20a%20sticky,bottom%20of%20the%20browser%20window.)
 5. [media-css](https://www.w3schools.com/cssref/css3_pr_mediaquery.asp)
 6. [background-image](https://www.w3schools.com/cssref/pr_background-image.asp)
+7. [phoneview](https://www.gyford.com/phil/writing/2010/07/06/web-page-iphone/)
 
 # Validators:
 1. [v-html](https://www.freeformatter.com/html-validator.html)

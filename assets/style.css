@@ -1,129 +1,124 @@
-html {
-    min-height: 100%;
-}
-
-body {
-    /*set the background image I found on google*/
-    background-image: url("https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fdam%2Fimageserve%2F765877054%2F960x0.jpg%3Ffit%3Dscale");
-    background-color: lightgrey;
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.container-fluid {
-    /*navbar same for all pages same for all pages */
-    background-color: lightgray;
-    font-size: 20px;
-    font-family: 'Courier New', Courier, monospace;
-    /*added padding to the top and bottom of the nav bar to give room for the button when screen is sm*/
-    padding-top: 7px;
-    padding-bottom: 7px;
-    padding-left: 20px;
-    margin-top: -7px;
-    margin-bottom: -8px;
-    border: 5px;
-    border-style: inset;
-    border-color: white;
-}
-
-.nav-item {
-    padding-right: 15px;
-}
-
-
-/*end of navbar*/
-
-footer {
-    /*same for all pages*/
-    background-color: lightgray;
-    border: 3px;
-    border-style: ridge;
-    border-color: white;
-    /*got this from page i sourced in readme file*/
-    flex-shrink: 0;
-    margin-top: auto;
-}
-
-footer>p {
-    font-size: 15px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-align: center;
-    color: grey;
-    padding-top: 15px;
-}
-
-main {
-    /*columns and rows for index.html and contact.html*/
-    color: grey;
-    background-color: lightgray;
-    font-family: 'Courier New', Courier, monospace;
-    margin-top: 60px;
-    border: 5px;
-    border-style: inset;
-    border-color: white;
-}
-
-.row2 {
-    padding-top: 5px;
-}
-
-
-/*css for the portfolio.html*/
-
-.container2 {
-    padding-right: 5px;
-    padding-left: 5px
-}
-
-.col-4 {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 20px;
-    text-align: center;
-    border-right: -3px;
-}
-
-header {
-    color: lightgray;
-    font-family: 'Courier New', Courier, monospace;
-    padding-top: 25px;
-    padding-bottom: 25px;
-}
-
-
-/*contact html style sheets*/
-
-main {
-    padding-bottom: 40px;
-    margin-bottom: 40px;
-}
-
-.container1 {
-    color: grey;
-    background-color: lightgray;
-    margin-top: 60px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 60px;
-    padding-top: 30px;
-    padding-left: 5px;
-    border: 5px;
-    border-style: inset;
-    border-color: white;
-}
-
-@media screen and (max-width: 700px) {
-    .images {
-        float: right;
-        width: 33.3%;
-        padding-bottom: 5px;
+    body {
+        /*set the background image I found on google*/
+        background-image: url("https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fdam%2Fimageserve%2F765877054%2F960x0.jpg%3Ffit%3Dscale");
+        background-color: lightgrey;
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
-}
-
-.button {
-    padding-left: 200px;
-    padding-right: 200px;
-    padding-top: 10px;
-    margin-left: -150px;
-}
+    
+    .container-fluid {
+        /*navbar same for all pages same for all pages */
+        background-color: lightgray;
+        font-size: 20px;
+        font-family: 'Courier New', Courier, monospace;
+        /*added padding to the top and bottom of the nav bar to give room for the button when screen is sm*/
+        padding-top: 7px;
+        padding-bottom: 7px;
+        padding-left: 20px;
+        margin-top: -7px;
+        margin-bottom: -8px;
+        border: 5px;
+        border-style: inset;
+        border-color: white;
+    }
+    
+    .nav-item {
+        padding-right: 15px;
+    }
+    /*end of navbar*/
+    
+    footer {
+        /*same for all pages*/
+        background-color: lightgray;
+        border: 3px;
+        border-style: ridge;
+        border-color: white;
+        /*got this from page i sourced in readme file*/
+        flex-shrink: 0;
+        margin-top: auto;
+    }
+    
+    footer>p {
+        font-size: 15px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-align: center;
+        color: grey;
+        padding-top: 15px;
+    }
+    
+    main {
+        /*columns and rows for index.html and contact.html*/
+        color: grey;
+        background-color: lightgray;
+        font-family: 'Courier New', Courier, monospace;
+        margin-top: 60px;
+        border: 5px;
+        border-style: inset;
+        border-color: white;
+    }
+    
+    .row2 {
+        padding-top: 5px;
+    }
+    /*css for the portfolio.html*/
+    
+    .container2 {
+        padding-right: 5px;
+        padding-left: 5px
+    }
+    
+    .col-4 {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 16px;
+        text-align: center;
+        border-right: -3px;
+        float: left;
+    }
+    
+    header {
+        color: lightgray;
+        font-family: 'Courier New', Courier, monospace;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    /*contact html style sheets*/
+    
+    main {
+        padding-bottom: 40px;
+        margin-bottom: 40px;
+    }
+    
+    .container1 {
+        color: grey;
+        background-color: lightgray;
+        margin-top: 60px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 60px;
+        padding-top: 30px;
+        padding-left: 5px;
+        border: 5px;
+        border-style: inset;
+        border-color: white;
+    }
+    
+    .button {
+        padding-left: 200px;
+        padding-right: 200px;
+        padding-top: 10px;
+        margin-left: -150px;
+    }
+    /*added a card to the bottom portion of the contact*/
+    
+    .card {
+        margin-bottom: 20px;
+        color: grey;
+        background-color: lightgray;
+        font-family: 'Courier New', Courier, monospace;
+        text-align: center;
+        border: 5px;
+        border-style: inset;
+        border-color: white;
+    }

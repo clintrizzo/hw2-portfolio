@@ -71,10 +71,9 @@
     
     .col-12 {
         font-family: 'Courier New', Courier, monospace;
-        font-size: 16px;
+        font-size: 23px;
         text-align: center;
         border-right: -3px;
-        float: left;
         border: 3px;
         border-style: inset;
         border-color: white;

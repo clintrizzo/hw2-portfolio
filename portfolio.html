@@ -7,62 +7,64 @@
     <title>Rizzo/Portfolio</title>
     <!--bootstrap css-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/style.css" media="screen">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--in readme on sources #7 to show where i found this-->
     <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
 </head>
 
 <body>
-    <!--bootstrap nav bar-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">Clint Rizzo</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">About Me</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="portfolio.html">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                </ul>
+    <header>
+        <center>
+            <h1>Projects</h1>
+        </center>
+    </header>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html" style="color: white">Home</a>
+        <a href="https://github.com/"><i class="fa fa-github" style="font-size: 35px; color:white;"></i></a>
+        <a href="https://www.linkedin.com/in/clinton-rizzo-79b67b1b6/"><i class="fa fa-linkedin" style="font-size: 35px; color:white;"></i></a>
+        <a href="https://www.linkedin.com/in/clinton-rizzo-79b67b1b6/"><i class="fa fa-instagram" style="font-size: 35px; color:white;"></i></a>
+    </div>
+    <br>
+    <br>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card" style="width: 400px; height: 500px;">
+                <img src="assets/Images/" class="card-img-top" alt="2d game">
+                <div class="card-body">
+                    <p class="card-text">I created this brick building game over the winter break to practice my javascript code. Future installments to the project I would like to had more levels, give health to the bricks, and allow the user to get more lives through out
+                        the game.</p>
+                    <a href="https://github.com/clintrizzo/2D-game">Repo from Github</a>
+                </div>
             </div>
         </div>
-    </nav>
-    <!--end of nav bar-->
-    <div class="container2">
-        <figure class="pictures">
-            <header>
-                <h1>Portfolio</h1>
-            </header>
-            <!--used a gutter from bootstrap-->
-            <div class="row g-2">
-                <div class="col-12">
-                    <div class="p-1 border bg-light"><img src="assets/Images/brick-breaker.png" alt="Brick Breaker Game" width="350" height="350"><a href="https://clintrizzo.github.io/2D-game/">The game</a>
-                        <div><a href="https://github.com/clintrizzo/2D-game">Repo for the code</a></div>
-                    </div>
-                    <div class="col-12">
-                        <div class="p-1 border bg-light"><img src="assets/Images/placeholder.png" alt="future project spot" width="350" height="350">Future project coming soon!</div>
-                    </div>
-                    <div class="col-12">
-                        <div class="p-1 border bg-light"><img src="assets/Images/placeholder.png" alt="future project spot" width="350" height="350">Future project coming soon!</div>
-                    </div>
-
+        <div class="col-md-4">
+            <div class="card" style="width: 400px; height: 500px;">
+                <img src="assets/Images/" class="card-img-top" alt="To do list">
+                <div class="card-body">
+                    <p class="card-text">I created this app for a normal work day. Using local storage I was able to keep the info logged when exiting the app. The slots change colors when that particular time has passed. I used moment.JS to get date and the time.</p>
+                    <a href="https://github.com/clintrizzo/day-planner">Repo from Github</a>
                 </div>
-        </figure>
+            </div>
         </div>
-        <footer>
-            <p> &amp; Clint Rizzo 2020</p>
-        </footer>
+        <div class="col-md-4">
+            <div class="card" style="width: 400px; height: 500px;">
+                <img src="assets/Images/" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">This was my first team project. The main things that I worked on for the project was designing the HTML and CSS for the calendar page. I also used javascript to implement the current weather using geolocation.</p>
+                    <a href="https://github.com/kjwallac/BusyParentScheduler">Repo from Github</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p> &amp; Clint Rizzo 2020</p>
+    </footer>
 
 </body>
-
 
 
 <!--bootstrap for the buttons when the screen shrinks-->

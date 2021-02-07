@@ -1,126 +1,219 @@
-    body {
-        /*set the background image I found on google*/
-        background-image: url("https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fspecials-images.forbesimg.com%2Fdam%2Fimageserve%2F765877054%2F960x0.jpg%3Ffit%3Dscale");
-        background-color: lightgrey;
-        height: 100%;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(23, 10, 104);
+    background: linear-gradient( 324deg, rgba(43, 23, 172, 0) 23%, rgb(117, 150, 204) 94%);
+    background-size: 500% 500%;
+    -webkit-animation: gradient 7s ease infinite;
+    animation: gradient 7s ease infinite;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@-webkit-keyframes gradient {
+    0% {
+        background-position: 0% 50%;
     }
-    
-    .container-fluid {
-        /*navbar same for all pages same for all pages */
-        background-color: lightgray;
-        font-size: 20px;
-        font-family: 'Courier New', Courier, monospace;
-        /*added padding to the top and bottom of the nav bar to give room for the button when screen is sm*/
-        padding-top: 7px;
-        padding-bottom: 7px;
-        padding-left: 20px;
-        margin-top: -7px;
-        margin-bottom: -8px;
-        border: 5px;
-        border-style: inset;
-        border-color: white;
+    50% {
+        background-position: 100% 50%;
     }
-    
-    .nav-item {
-        padding-right: 15px;
+    100% {
+        background-position: 0% 50%;
     }
-    /*end of navbar*/
-    
-    footer {
-        /*same for all pages*/
-        background-color: lightgray;
-        border: 3px;
-        border-style: ridge;
-        border-color: white;
-        /*got this from page i sourced in readme file*/
-        flex-shrink: 0;
-        margin-top: auto;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
     }
-    
-    footer>p {
-        font-size: 15px;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        text-align: center;
-        color: grey;
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+header {
+    background: rgb(74, 70, 97);
+    background: linear-gradient( 324deg, rgba(76, 66, 141, 0) 23%, rgb(113, 139, 182) 94%);
+    border: 3px;
+    border-style: ridge;
+    border-color: white;
+    flex-shrink: 0;
+    margin-top: auto;
+    text-align: center;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.grid {
+    display: grid;
+    border: 2px ridge black;
+    max-width: 1000px;
+    grid-template-columns: 4fr 8fr;
+    grid-gap: 40px;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, .05);
+}
+
+.content,
+.sidebar {
+    font-size: 14px;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper,
+.grid,
+.sidebar,
+.content {
+    position: relative;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 500px;
+    height: 200px;
+    border: 1px solid #7486eb00;
+    perspective: 1000px;
+    margin-top: 25px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color: rgba(85, 112, 231, 0);
+    color: black;
+}
+
+
+/* Style the back side */
+
+.flip-card-back {
+    background-color: rgb(114, 169, 224);
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.info {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+    background-color: #f1f1f1;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+}
+
+.title {
+    color: grey;
+    font-size: 18px;
+}
+
+footer {
+    background: rgb(74, 70, 97);
+    background: linear-gradient( 324deg, rgba(76, 66, 141, 0) 23%, rgb(113, 139, 182) 94%);
+    border: 3px;
+    border-style: ridge;
+    border-color: white;
+    flex-shrink: 0;
+    margin-top: auto;
+}
+
+footer>p {
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: black;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+
+/*portfolio css*/
+
+.col-md-4 {
+    margin-bottom: 25px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
         padding-top: 15px;
     }
-    
-    main {
-        /*columns and rows for index.html and contact.html*/
-        color: grey;
-        background-color: lightgray;
-        font-family: 'Courier New', Courier, monospace;
-        margin-top: 60px;
-        border: 5px;
-        border-style: inset;
-        border-color: white;
+    .sidenav a {
+        font-size: 18px;
     }
-    
-    .row2 {
-        padding-top: 5px;
-    }
-    /*css for the portfolio.html*/
-    
-    .container2 {
-        padding-right: 5px;
-        padding-left: 5px
-    }
-    
-    .col-12 {
-        font-family: 'Courier New', Courier, monospace;
-        font-size: 23px;
-        text-align: center;
-        border-right: -3px;
-        border: 3px;
-        border-style: inset;
-        border-color: white;
-    }
-    
-    header {
-        color: lightgray;
-        font-family: 'Courier New', Courier, monospace;
-        padding-top: 25px;
-        padding-bottom: 25px;
-    }
-    /*contact html style sheets*/
-    
-    main {
-        padding-bottom: 40px;
-        margin-bottom: 40px;
-    }
-    
-    .container1 {
-        color: grey;
-        background-color: lightgray;
-        margin-top: 60px;
-        margin-left: 20px;
-        margin-right: 20px;
-        margin-bottom: 60px;
-        padding-top: 30px;
-        padding-left: 5px;
-        border: 5px;
-        border-style: inset;
-        border-color: white;
-    }
-    
-    .button {
-        padding-left: 200px;
-        padding-right: 200px;
-        padding-top: 10px;
-        margin-left: -150px;
-    }
-    /*added a card to the bottom portion of the contact*/
-    
-    .card {
-        margin-bottom: 20px;
-        color: grey;
-        background-color: lightgray;
-        font-family: 'Courier New', Courier, monospace;
-        text-align: center;
-        border: 5px;
-        border-style: inset;
-        border-color: white;
-    }
+}

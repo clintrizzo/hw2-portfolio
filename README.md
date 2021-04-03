@@ -26,7 +26,6 @@
 5. Images of the page responsiveness to a condensed screen:
     1. ![first](assets/Images/screenshot1.png)
     2. ![second](assets/Images/screenshot2.png)
-    3. ![third](assets/Images/screenshot3.png)
 6. Link to the project:
    1. [portfolio](https://clintrizzo.github.io/hw2-portfolio/)
 

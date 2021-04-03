@@ -3,8 +3,8 @@
 }
 
 body {
-    background: rgb(23, 10, 104);
-    background: linear-gradient( 324deg, rgba(43, 23, 172, 0) 23%, rgb(117, 150, 204) 94%);
+    background: rgba(45, 15, 212, 0.671);
+    background: linear-gradient( 324deg, rgba(23, 130, 172, 0.637) 23%, rgba(57, 167, 187, 0.562) 94%);
     background-size: 500% 500%;
     -webkit-animation: gradient 7s ease infinite;
     animation: gradient 7s ease infinite;
@@ -46,6 +46,7 @@ header {
     text-align: center;
     padding-top: 3px;
     padding-bottom: 3px;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .wrapper {
@@ -67,11 +68,17 @@ header {
 .content,
 .sidebar {
     font-size: 14px;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 p {
     padding: 0;
     margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+a {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .wrapper,
@@ -97,6 +104,8 @@ p {
     text-align: center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
 }
 
 .flip-card:hover .flip-card-inner {
@@ -217,4 +226,57 @@ footer>p {
     .sidenav a {
         font-size: 18px;
     }
+}
+
+.social-icons {
+    padding: 0;
+    list-style: none;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin: 0.25em;
+    position: relative;
+    font-size: 35px;
+}
+
+.social-icons i {
+    color: #fff;
+    position: absolute;
+    top: 0.2em;
+    left: .3em;
+    transition: all 265ms ease-out;
+}
+
+.social-icons a {
+    display: inline-block;
+}
+
+.social-icons a:before {
+    transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    content: " ";
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    display: block;
+    background: linear-gradient(45deg, rgba(48, 151, 247, 0.938), rgb(118, 160, 238));
+    transition: all 265ms ease-out;
+}
+
+.social-icons a:hover:before {
+    transform: scale(0);
+    transition: all 265ms ease-in;
+}
+
+.social-icons a:hover i {
+    transform: scale(2.0);
+    -ms-transform: scale(2.0);
+    -webkit-transform: scale(2.0);
+    color: rgb(153, 166, 202);
+    background: -webkit-linear-gradient(45deg, rgba(243, 243, 243, 0.938), rgb(171, 192, 233));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 265ms ease-in;
 }

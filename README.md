@@ -24,8 +24,8 @@
    2. The navbar and footer I used the same styles for all html files. Those style sheets are at the top of the css with comments to signify where they start and end.
        
 5. Images of the page responsiveness to a condensed screen:
-    1. ![first](assets\Images\screenshot1.png)
-    2. ![second](assets\Images\screenshot2.png)
+    1. ![first](/Images/screenshot1.png)
+    2. ![second](/Images/screenshot2.png)
 6. Link to the project:
    1. [portfolio](https://clintrizzo.github.io/hw2-portfolio/)
 
